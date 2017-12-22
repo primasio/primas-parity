@@ -1,0 +1,22 @@
+[parity]
+# Ropsten PoW Test Network
+chain = "ropsten"
+base_path = "/tokenup/parity/data"
+
+[ui]
+# You will need to unlock accounts manually if Wallet is disabled.
+disable = true
+
+[websockets]
+# UI won't work and WebSockets server will be not available.
+disable = true
+
+[dapps]
+# You won't be able to access any web Dapps.
+disable = true
+
+[rpc]
+#  JSON-RPC will be listening for connections on IP 0.0.0.0.
+interface = "0.0.0.0"
+# Allows Cross-Origin Requests from domain '*'.
+cors = "*"
