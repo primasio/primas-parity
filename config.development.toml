@@ -11,10 +11,10 @@ disable = true
 # UI won't work and WebSockets server will be not available.
 disable = false
 port = 8546
-interface = "local"
-cors = "null"
+interface = "all"
+origins = ["all"]
 apis = ["web3", "eth", "net", "rpc", "pubsub"]
-hosts = ["none"]
+hosts = ["all"]
 
 [dapps]
 # You won't be able to access any web Dapps.
