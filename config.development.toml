@@ -1,7 +1,7 @@
 [parity]
 # Ropsten PoW Test Network
 chain = "ropsten"
-base_path = "/tokenup/parity/data"
+base_path = "/primas/parity/data"
 
 [ui]
 # You will need to unlock accounts manually if Wallet is disabled.
@@ -9,7 +9,12 @@ disable = true
 
 [websockets]
 # UI won't work and WebSockets server will be not available.
-disable = true
+disable = false
+port = 8546
+interface = "local"
+cors = "null"
+apis = ["web3", "eth", "net", "rpc", "pubsub"]
+hosts = ["none"]
 
 [dapps]
 # You won't be able to access any web Dapps.
@@ -17,6 +22,6 @@ disable = true
 
 [rpc]
 #  JSON-RPC will be listening for connections on IP 0.0.0.0.
-interface = "0.0.0.0"
+interface = "127.0.0.1"
 # Allows Cross-Origin Requests from domain '*'.
 cors = "*"
